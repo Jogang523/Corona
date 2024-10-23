@@ -1,0 +1,142 @@
+/* 네비게이션 바 수정 */
+.u-nav-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 27px 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.u-nav-container ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.u-nav-container li {
+    margin: 0 30px;
+}
+
+.u-nav-container a {
+    color: #000;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#quiz-nav a {
+    color: hwb(195 24% 0%); /* 하늘색 (light blue) 글자색 지정 */
+}
+
+.u-nav-container a:hover {
+    color: hwb(0 33% 0%);
+}
+
+/* 헤더 타이틀 수정 */
+header {
+    margin-top: 50px; /* 네비게이션 아래에 공간 추가 */
+}
+
+header  h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 100px;  /* 페이지의 맨 위에서 20px 아래에 위치 */
+    left: 70px; /* 페이지의 맨 왼쪽에서 20px 오른쪽에 위치 */
+}
+
+header  h2 { 
+    display: none;
+}
+.quiz__header {
+    position: relative;
+    display: flex;
+    align-items: flex-start; /* 제목과 이미지를 위쪽에 정렬 */
+}
+
+.quiz__main {
+    display: flex;
+    align-items: center; /* 자식 요소들을 수직 중앙에 정렬 */
+    justify-content: center; /* 자식 요소들을 수평 중앙에 정렬 */
+    margin-bottom: 30px;
+}
+
+
+#quiz-image {
+    width: 50%; 
+    height: auto; 
+    border-radius: 10px;
+    margin-top: 20px; 
+}
+
+.quiz__question {
+    font-size: 1.5rem;
+    color: #333;
+    flex: 1; /* 질문이 남은 공간을 차지하도록 함 */
+    text-align: left;
+}
+
+.quiz__choice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.quiz__choice button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1rem;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.quiz__choice button:hover {
+    background-color: #229799;
+    color: white;
+}
+
+
+.quiz__view {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.quiz__view .true, .quiz__view .false {
+    display: none;
+    font-size: 1.25rem;
+    margin: 20px 0;
+    color: #000000;
+}
+
+.card-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.quiz__answer, .quiz__desc, .quiz__info, .quiz__check {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.next {
+    background-color: #229799;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.next:hover {
+    background-color: #1b7d7f;
+}
+

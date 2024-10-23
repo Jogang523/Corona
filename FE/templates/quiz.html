@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ko"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Quiz">
+    <meta property="og:type" content="website">
+    <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+
+<div class="u-custom-menu u-nav-container">
+    <ul class="u-nav u-unstyled u-nav-1">
+        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/">Home</a></li>
+        <li id="quiz-nav" class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/quiz">Quiz</a></li>
+        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/contact">Contact</a></li>
+    </ul>
+</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/quiz.css">
+    
+    <style>
+        body {
+            font-family: "Orbit", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #f5f5f5;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        next :hover {
+            background-color: #229799;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>코로나19<br>상식퀴즈</h1>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <div class="quiz__wrap">
+            <div class="quiz">
+                <div class="quiz__main">
+        <h2 class="quiz__title"></h2>
+        <!-- 이미지 삽입 -->
+        <img id="quiz-image" src="" alt="Quiz Image" style="width:50%; height:auto; border-radius:10px; margin-bottom:30px;">
+    </div>
+
+    <!-- quiz__question을 quiz__title-wrapper 바깥으로 이동 -->
+    <div class="quiz__question"></div>
+
+    <h4></h4>
+    <div class="quiz__view">
+        <div class="true">😇정답입니다!</div>
+        <div class="false">😈틀렸습니다!</div>
+    </div>
+    
+    <div class="card-container">
+        <div class="quiz__choice"></div>
+        <div class="quiz__answer">
+            <button class="next">다음 문제</button>
+        </div>
+        <div class="quiz__desc"></div>
+        <div class="quiz__info"><b>??점</b></div>
+        <div class="quiz__check"> 총 <span> ❔ </span>개 </div>
+    </div>
+</div>
+
+        </div>
+    </main>
+
+    <script src="assets/js/quiz.js"></script>
+    <!-- //main -->
+</body>
+</html>
